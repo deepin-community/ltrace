@@ -1,3 +1,36 @@
+ltrace (0.7.3-6.4) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Stop building for MIPS, ltrace no longer works there.
+    (Closes: #1023436)
+
+ -- Adrian Bunk <bunk@debian.org>  Sat, 25 Feb 2023 20:40:34 +0200
+
+ltrace (0.7.3-6.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/rules: disabled use of -Werror to avoid a FTBFS in mipsel, alpha and
+    ia64 when using DH level 13. Thanks to Paul Gevers <elbrus@debian.org>.
+    (Closes: #1010493)
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Mon, 02 May 2022 20:51:56 -0300
+
+ltrace (0.7.3-6.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Using new DH level format. Consequently:
+      - debian/compat: removed.
+      - debian/control: changed from 'debhelper' to 'debhelper-compat' in
+        Build-Depends field and bumped level to 13.
+      - Closes: #965705
+  * Dropped CDBS in favor of the debhelper to allow the build system to use
+    DH level greater than 11. Consequently:
+      - debian/control: removed no longer needed cdbs and autotools-dev from
+        Build-Depends field.
+      - debian/rules: changed from CDBS to DH.
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Wed, 30 Mar 2022 20:48:13 -0300
+
 ltrace (0.7.3-6.1) unstable; urgency=medium
 
   * Non-maintainer upload.
