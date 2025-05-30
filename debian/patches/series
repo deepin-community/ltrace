@@ -6,3 +6,4 @@
 06-unexpected-breakpoint
 gcc-5.diff
 deprecated-readdir_r.diff
+0001-deepin-sw_64-support.diff

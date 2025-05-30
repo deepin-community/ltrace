@@ -6,7 +6,7 @@ Standards-Version: 3.9.8
 Build-Depends: debhelper-compat (= 13), libiberty-dev, libelf-dev, libselinux1-dev
 
 Package: ltrace
-Architecture: alpha amd64 ia64 i386 powerpc powerpcspe ppc64 s390 s390x sparc
+Architecture: alpha amd64 ia64 i386 powerpc powerpcspe ppc64 s390 s390x sparc sw64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Tracks runtime library calls in dynamically linked programs
  ltrace is a debugging program which runs a specified command until it
